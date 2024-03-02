@@ -7,9 +7,11 @@ The RISC-V CPU cycle is the fundamental process by which instructions are fetche
 ![image](https://github.com/vanngo411/RISC_V/blob/main/BlockDiagram.png)
 
 The different thing from the diagram above is a RAM that store 7 overwritten vlaues when logic RegWrite on. The main thing of top level to run promgram on Alchitry Au is show those values on 7 LEDs. Basically, for each RegWrite on, the overwritten vlaue will store in a Ram name RAM_for _LEDShowing and they will be driven by a clock divider  for each 4 seconds.
+
 ![image](https://github.com/vanngo411/RISC_V/blob/main/LED_Showup_Schematic.png)
 
 This program is generated and run on Alchitry Au board
+
 ![image](https://github.com/vanngo411/RISC_V/blob/main/Alchitry_Au.png)
 
 ## Final datapath in Quartus Prime
