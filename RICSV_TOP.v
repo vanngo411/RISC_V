@@ -13,8 +13,6 @@ module RICSV_TOP(
 	wire [1:0] ALUOpTop;
 	wire [31:0] PCtop, NextToPCtop, Mux3_outTop;
 	
-	
-//	wire [7:0] led_outTop;
 	wire [7:0] data_to_LED_Top;
 	wire [2:0] read_address_LED;
 	reg [2:0] read_address_for_LED;
@@ -88,7 +86,7 @@ module RICSV_TOP(
 	.ALUControl_out(ALUControl_outTop) //ALUControl_outTop is needed verify 32 or 4 bits
 	);
 	
-	
+	// Data memory instance
 	data_memory data_memory
 	(
 	.clk(clk), 
@@ -99,7 +97,8 @@ module RICSV_TOP(
 	.write_data(), 
 	.Read_Data(Data_outTop)
 	);
-	
+
+	// Second Mux 
 	Mux2 Mux2
 	(
 	.Sel(MemtoRegTop), 
@@ -108,7 +107,7 @@ module RICSV_TOP(
 	.Mux2_out(writeBackTop)
 	);
 	
-
+	// Control signal
 	control control 
 	(
 	.reset(reset),
