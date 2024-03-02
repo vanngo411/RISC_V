@@ -7,7 +7,7 @@ RISC-V is an open source Instruction Set Architecture (ISA). In this project I h
 
 
 ## Final datapath in Xilinx Vivado
-
+![Image Alt Text](https://github.com/vanngo411/RISC_V/tree/main/BlockDiagram.png)
 ## Datapath without bundled nets
 
 
