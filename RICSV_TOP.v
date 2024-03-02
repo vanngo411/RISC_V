@@ -1,3 +1,5 @@
+// This is the top module of RISC_V. All modules are included and is a version of Vivado.
+// This one is tested by initaial values. 
 module RICSV_TOP(
 	input clk, rst_n,
     output[7:0] led,
@@ -6,7 +8,7 @@ module RICSV_TOP(
 	);
 
 	wire [31:0] instruction_outTop, read_data1Top, read_data2Top, ALUresultTop, toALU, Data_outTop, writeBackTop, im_genTop, jmp_addrTop;
-	wire [3:0] ALUControl_outTop; ///??????????????
+	wire [3:0] ALUControl_outTop; /
 	wire RegWriteTop, MemWriteTop, MemReadTop, ALUSrcTop, MemtoRegTop, ZeroTop, AndGate_outTop, branch_outTop;
 	wire [1:0] ALUOpTop;
 	wire [31:0] PCtop, NextToPCtop, Mux3_outTop;
